@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Docker Course</title>
+  <link rel="stylesheet" href="/theme.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h3>Docker Course</h3>
+  </nav>
+
+  <div class="container with-nav">
+    <div class="card">
+      <h2>Add new Log</h2>
+
+      <form action="/" method="post">
+        <div class="form-control">
+          <input name="text" type="text" placeholder="add log here...">
+        </div>
+
+        <button type="submit" class="btn primary">Add</button>
+      </form>
+
+      <hr />
+
+      <% if(logs.length === 0){ %>
+        <p>No logs now</p>
+      <% } %>
+
+      <ul>
+        <% for (let i = 0; i < logs.length; i++) {%>
+          <li><%= logs[i] %></li>
+        <% } %>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>
