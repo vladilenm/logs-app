@@ -7,6 +7,8 @@ COPY . .
 
 RUN ls -lah
 
+RUN echo "Hi"
+
 RUN npm install
 
 EXPOSE 3000
