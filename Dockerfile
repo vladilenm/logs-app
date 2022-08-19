@@ -2,9 +2,9 @@ FROM node
 
 WORKDIR /opt/app
 
-RUN npm install
-
 COPY . .
+
+RUN npm install
 
 EXPOSE 3000
 
