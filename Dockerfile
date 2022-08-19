@@ -1,8 +1,11 @@
+
 FROM node
 
 WORKDIR /opt/app
 
 COPY . .
+
+RUN ls -lah
 
 RUN npm install
 
