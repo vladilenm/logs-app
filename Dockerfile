@@ -1,6 +1,6 @@
 FROM node
 
-WORKDIR /usr/.....
+WORKDIR /opt/app
 
 RUN npm install
 
